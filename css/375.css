@@ -168,7 +168,7 @@
 
 .menu li {
   list-style-type: none;
-  margin: 7px;
+  margin-bottom: 12px;
 }
 .menu-btn {
   background-color: var(--pink);
@@ -178,6 +178,11 @@
   justify-content: center;
   align-items: center;
   border-radius: 10px;
+
+  background-image: url(../img/line.svg);
+  background-repeat: no-repeat;
+  background-size: 24px;
+  background-position: center;
 }
 .menu-btn span {
   width: 28px;
@@ -229,6 +234,7 @@
   background-color: var(--grey);
   color: var(--text-black);
   transition: background-color 0.3s, color 0.3s;
+  white-space: nowrap;
 }
 
 .header_container_link--button:hover {
@@ -236,8 +242,21 @@
   color: white;
 }
 .header_container_link {
-  overflow: hidden;
+  overflow: auto;
   width: 100%;
-  margin-top: 60px;
+  margin-top: 10px;
   margin-bottom: 30px;
+}
+.header_container_link::-webkit-scrollbar {
+  width: 0px;
+  height: 0;
+}
+
+.header_container_link::-webkit-scrollbar-thumb {
+  background-color: var(--Line, #dfdff0);
+  border-radius: 3px;
+}
+
+.header_container_link::-webkit-scrollbar-track {
+  background-color: transparent;
 }
