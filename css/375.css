@@ -241,22 +241,21 @@
   background-color: var(--pink);
   color: white;
 }
+
 .header_container_link {
   overflow: auto;
+  scrollbar-width: thin;
   width: 100%;
   margin-top: 10px;
   margin-bottom: 30px;
 }
+
 .header_container_link::-webkit-scrollbar {
-  width: 0px;
-  height: 0;
+  width: 0;
+  display: none;
 }
 
-.header_container_link::-webkit-scrollbar-thumb {
-  background-color: var(--Line, #dfdff0);
-  border-radius: 3px;
-}
-
-.header_container_link::-webkit-scrollbar-track {
-  background-color: transparent;
+.header_container_link:hover::-webkit-scrollbar {
+  width: 12px;
+  display: block;
 }
