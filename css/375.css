@@ -766,6 +766,7 @@
   font-style: normal;
   font-weight: 500;
   line-height: 140%;
+  margin: 0 auto;
 }
 .footer_contaier .footer_container_cell:nth-child(5) {
   margin-top: 0;

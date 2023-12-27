@@ -48,7 +48,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function getRandomColor() {
-    // Генерация случайного цвета в формате HEX
     return "#" + Math.floor(Math.random() * 16777215).toString(16);
   }
 

@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const showSlides = () => {
       slides.forEach((slide, index) => {
         if (index >= currentSlide && index < currentSlide + slidesToShow) {
-          slide.style.display = ""; // Изменил display на пустую строку, чтобы использовать стандартное значение.
+          slide.style.display = "";
         } else {
           slide.style.display = "none";
         }
