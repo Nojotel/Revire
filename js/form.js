@@ -111,7 +111,7 @@ function closeModal() {
     document.getElementById("name").value = "";
     document.getElementById("tel").value = "";
 
-    removeErrorMessage(document.getElementById("name"));
-    removeErrorMessage(document.getElementById("tel"));
+    //removeErrorMessage(document.getElementById("name"));
+    // removeErrorMessage(document.getElementById("tel"));
   }
 }

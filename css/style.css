@@ -650,10 +650,18 @@ ol {
   background-position: center;
 }
 .section_two_container--swiper {
-  overflow: hidden;
+  overflow: auto;
   width: 100%;
   margin-top: 60px;
   margin-bottom: 30px;
+}
+
+.section_two_container--swiper::-webkit-scrollbar {
+  display: none;
+}
+
+.section_two_container--swiper {
+  scrollbar-width: none;
 }
 
 .swiper-content {
