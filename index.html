@@ -689,7 +689,7 @@
       <hr />
       <div class="footer_copyright">© 2023 Интернет-магазин лакокрасочной продукции</div>
     </footer>
-    <div class="mob_main">
+    <div class="mob_main opaciti">
       <div class="mob_header_container">
         <div class="mob_header_container--address">
           <div class="mob_address--shops"></div>
@@ -699,6 +699,7 @@
         <div class="mob_header_control">
           <div class="menu-btn"></div>
           <div class="menu">
+            <div class="close-button--menu" onclick="closeMenu()">✖</div>
             <div class="mob_navigation_container-catalog">
               <div class="mob_header_container_control--catalog">
                 <button class="mob_catalog--button"></button>
@@ -746,6 +747,7 @@
               </ul>
             </nav>
           </div>
+          <div class="menu-overlay"></div>
           <div class="mob_header_container_control--search_container">
             <input type="text" class="mob_search--input" placeholder="Поиск" />
             <button class="mob_search--button"><img src="./img/search.png" alt="Поиск" /></button>
@@ -875,7 +877,7 @@
         </div>
         <div class="section_three_container--slider">
           <div class="three_slider-product_container slide--7">
-            <div class="slider-product_container_discount">-25%</div>
+            <div class="slider-product_container_discount">Новинка</div>
             <img class="slider-product_container_img" src="./img/product1.png" alt="Товар" />
             <div class="slider-product_container_text">Benjamin Moore Regal Select 549 Waterborne Interior Paint Eggshell</div>
             <div class="slider-product_container_description">
@@ -890,7 +892,7 @@
             <button class="slider-product_container-button" id="7"></button>
           </div>
           <div class="three_slider-product_container slide--8">
-            <div class="slider-product_container_discount">-10%</div>
+            <div class="slider-product_container_discount">Новинка</div>
             <img class="slider-product_container_img" src="./img/product2.png" alt="Товар" />
             <div class="slider-product_container_text">Benjamin Moore Aura 532 Bath & Spa Waterborne Interior Paint Matte Finish</div>
             <div class="slider-product_container_description">
@@ -905,7 +907,7 @@
             <button class="slider-product_container-button" id="8"></button>
           </div>
           <div class="three_slider-product_container slide--9">
-            <div class="slider-product_container_discount">-25%</div>
+            <div class="slider-product_container_discount">Новинка</div>
             <img class="slider-product_container_img" src="./img/product1.png" alt="Товар" />
             <div class="slider-product_container_text">Benjamin Moore Regal Select 549 Waterborne Interior Paint Eggshell</div>
             <div class="slider-product_container_description">
@@ -920,7 +922,7 @@
             <button class="slider-product_container-button" id="9"></button>
           </div>
           <div class="three_slider-product_container slide--10">
-            <div class="slider-product_container_discount">-10%</div>
+            <div class="slider-product_container_discount">Новинка</div>
             <img class="slider-product_container_img" src="./img/product2.png" alt="Товар" />
             <div class="slider-product_container_text">Benjamin Moore Aura 532 Bath & Spa Waterborne Interior Paint Matte Finish</div>
             <div class="slider-product_container_description">
@@ -962,6 +964,73 @@
           </div>
         </div>
       </section>
+      <div class="mob_footer">
+        <img class="cell--logo" src="./img/logo.svg" alt="Логотип Revire" />
+        <div class="footer_contaier">
+          <div class="footer_container_cell">
+            <ul class="cell_container-list">
+              <li class="cell_container-item">
+                <a class="cell_container-link_title" href="#">О компании</a>
+              </li>
+              <li class="cell_container-item">
+                <a class="cell_container-link" href="#">О нас</a>
+              </li>
+              <li class="cell_container-item">
+                <a class="cell_container-link" href="#">Бренды</a>
+              </li>
+              <li class="cell_container-item">
+                <a class="cell_container-link" href="#">Контакты</a>
+              </li>
+              <li class="cell_container-item">
+                <a class="cell_container-link" href="#">Вакансии</a>
+              </li>
+              <li class="cell_container-item">
+                <a class="cell_container-link" href="#">Для бизнеса</a>
+              </li>
+              <li class="cell_container-item">
+                <a class="cell_container-link" href="#">Магазины</a>
+              </li>
+              <li class="cell_container-item">
+                <a class="cell_container-link" href="#">Оплата</a>
+              </li>
+              <li class="cell_container-item">
+                <a class="cell_container-link" href="#">Доставка</a>
+              </li>
+              <li class="cell_container-item">
+                <a class="cell_container-link" href="#">Акции</a>
+              </li>
+              <li class="cell_container-item">
+                <a class="cell_container-link" href="#">Помощь</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_container_cell">
+            <div class="cell_tel_container">
+              <div class="cell_tel_container--title">Телефон</div>
+              <button class="cell_tel_container--text">
+                <a href="tel:84951208155">8 (495) 120-81-55</a>
+              </button>
+            </div>
+            <div class="cell_mail_container">
+              <div class="cell_mail_container--title">Электронная почта</div>
+              <button class="cell_mail_container--text">
+                <a href="mailto:info@kraskizdes.ru">info@kraskizdes.ru</a>
+              </button>
+            </div>
+            <div class="cell_button_social">
+              <button class="social-vk"></button>
+              <button class="social-youtube"></button>
+            </div>
+            <div class="cell-card"></div>
+            <div class="footer_container_cell">
+              <div class="cell--reviews">5/5</div>
+              <button class="footer--button">Написать директору</button>
+            </div>
+          </div>
+        </div>
+        <hr />
+        <div class="footer_copyright">© 2023 Интернет-магазин лакокрасочной продукции</div>
+    </div>
     </div>
     <script src="./js/app.js"></script>
     <script src="./js/form.js"></script>
